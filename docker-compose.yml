@@ -14,9 +14,9 @@ services:
         # image: quay.io/whoacademy/virtual-learning-assistant
         # command: ./bp -p
         build: ./bot
-        mem_limit: 512m
-        mem_reservation: 128M
-        cpus: 1
+        # mem_limit: 512m
+        # mem_reservation: 128M
+        # cpus: 1
         restart: always
 
     host2:
@@ -26,9 +26,9 @@ services:
         # image: quay.io/whoacademy/virtual-learning-assistant
         # command: ./bp -p
         build: ./bot
-        mem_limit: 512m
-        mem_reservation: 128M
-        cpus: 1
+        # mem_limit: 512m
+        # mem_reservation: 128M
+        # cpus: 1
         restart: always
 
     host3:
@@ -38,9 +38,9 @@ services:
         # image: quay.io/whoacademy/virtual-learning-assistant
         # command: ./bp -p
         build: ./bot
-        mem_limit: 512m
-        mem_reservation: 128M
-        cpus: 1
+        # mem_limit: 512m
+        # mem_reservation: 128M
+        # cpus: 1
         restart: always
 
     host4:
@@ -50,7 +50,68 @@ services:
         # image: quay.io/whoacademy/virtual-learning-assistant
         # command: ./bp -p
         build: ./bot
-        mem_limit: 512m
-        mem_reservation: 128M
-        cpus: 1
+        # mem_limit: 512m
+        # mem_reservation: 128M
+        # cpus: 1
+        restart: always
+
+    host4:
+        depends_on:
+            - reverseproxy
+        # image: httpd:alpine
+        # image: quay.io/whoacademy/virtual-learning-assistant
+        # command: ./bp -p
+        build: ./bot
+        # mem_limit: 512m
+        # mem_reservation: 128M
+        # cpus: 1
+        restart: always
+
+    host5:
+        depends_on:
+            - reverseproxy
+        # image: httpd:alpine
+        # image: quay.io/whoacademy/virtual-learning-assistant
+        # command: ./bp -p
+        build: ./bot
+        # mem_limit: 512m
+        # mem_reservation: 128M
+        # cpus: 1
+        restart: always
+
+    host6:
+        depends_on:
+            - reverseproxy
+        # image: httpd:alpine
+        # image: quay.io/whoacademy/virtual-learning-assistant
+        # command: ./bp -p
+        build: ./bot
+        # mem_limit: 512m
+        # mem_reservation: 128M
+        # cpus: 1
+        restart: always
+
+
+    host7:
+        depends_on:
+            - reverseproxy
+        # image: httpd:alpine
+        # image: quay.io/whoacademy/virtual-learning-assistant
+        # command: ./bp -p
+        build: ./bot
+        # mem_limit: 512m
+        # mem_reservation: 128M
+        # cpus: 1
+        restart: always
+
+    host8:
+        depends_on:
+            - reverseproxy
+        # image: httpd:alpine
+        # image: quay.io/whoacademy/virtual-learning-assistant
+        # command: ./bp -p
+        build: ./bot
+        # mem_limit: 512m
+        # mem_reservation: 128M
+        # cpus: 1
         restart: always
