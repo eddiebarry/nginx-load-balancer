@@ -13,7 +13,7 @@ services:
         # image: nginx:alpine
         # image: quay.io/whoacademy/virtual-learning-assistant
         # command: ./bp -p
-        build: /Users/edgarmonis/nigix-load-balancing/new_exp/bot
+        build: /home/ubuntu/nginx-load-balancer/bot
         restart: always
 
     host2:
@@ -22,7 +22,7 @@ services:
         # image: httpd:alpine
         # image: quay.io/whoacademy/virtual-learning-assistant
         # command: ./bp -p
-        build: /Users/edgarmonis/nigix-load-balancing/new_exp/bot
+        build: /home/ubuntu/nginx-load-balancer/bot
         restart: always
 
     host3:
@@ -31,7 +31,7 @@ services:
         # image: httpd:alpine
         # image: quay.io/whoacademy/virtual-learning-assistant
         # command: ./bp -p
-        build: /Users/edgarmonis/nigix-load-balancing/new_exp/bot
+        build: /home/ubuntu/nginx-load-balancer/bot
         restart: always
 
     host4:
@@ -40,5 +40,5 @@ services:
         # image: httpd:alpine
         # image: quay.io/whoacademy/virtual-learning-assistant
         # command: ./bp -p
-        build: /Users/edgarmonis/nigix-load-balancing/new_exp/bot
+        build: /home/ubuntu/nginx-load-balancer/bot
         restart: always
