@@ -1,0 +1,44 @@
+version: '2'
+
+services:
+    reverseproxy:
+        image: reverseproxy
+        ports:
+            - 8080:8080
+        restart: always
+
+    host1:
+        depends_on:
+            - reverseproxy
+        # image: nginx:alpine
+        # image: quay.io/whoacademy/virtual-learning-assistant
+        # command: ./bp -p
+        build: /Users/edgarmonis/nigix-load-balancing/new_exp/bot
+        restart: always
+
+    host2:
+        depends_on:
+            - reverseproxy
+        # image: httpd:alpine
+        # image: quay.io/whoacademy/virtual-learning-assistant
+        # command: ./bp -p
+        build: /Users/edgarmonis/nigix-load-balancing/new_exp/bot
+        restart: always
+
+    host3:
+        depends_on:
+            - reverseproxy
+        # image: httpd:alpine
+        # image: quay.io/whoacademy/virtual-learning-assistant
+        # command: ./bp -p
+        build: /Users/edgarmonis/nigix-load-balancing/new_exp/bot
+        restart: always
+
+    host4:
+        depends_on:
+            - reverseproxy
+        # image: httpd:alpine
+        # image: quay.io/whoacademy/virtual-learning-assistant
+        # command: ./bp -p
+        build: /Users/edgarmonis/nigix-load-balancing/new_exp/bot
+        restart: always
