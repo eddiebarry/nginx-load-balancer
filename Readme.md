@@ -10,5 +10,6 @@ docker run --net=host --name nginx_load_balance nginx_test
 
 # Rebuild
 ```
+docker build -t reverseproxy .
 docker-compose up --build --force-recreate --no-deps
 ```
