@@ -5,6 +5,7 @@ services:
         image: reverseproxy
         ports:
             - 8080:8080
+        cpuset: "14,15"
         restart: always
 
     host1:
@@ -191,30 +192,30 @@ services:
         # cpus: 1
         restart: always
 
-    host15:
-        depends_on:
-            - reverseproxy
+    # host15:
+    #     depends_on:
+    #         - reverseproxy
         
-        # image: httpd:alpine
-        # image: quay.io/whoacademy/virtual-learning-assistant
-        # command: ./bp -p
-        build: ./bot
-        cpuset: "14"
-        # mem_limit: 512m
-        # mem_reservation: 128M
-        # cpus: 1
-        restart: always
+    #     # image: httpd:alpine
+    #     # image: quay.io/whoacademy/virtual-learning-assistant
+    #     # command: ./bp -p
+    #     build: ./bot
+    #     cpuset: "14"
+    #     # mem_limit: 512m
+    #     # mem_reservation: 128M
+    #     # cpus: 1
+    #     restart: always
 
 
-    host16:
-        depends_on:
-            - reverseproxy
-        # image: httpd:alpine
-        # image: quay.io/whoacademy/virtual-learning-assistant
-        # command: ./bp -p
-        build: ./bot
-        cpuset: "15"
-        # mem_limit: 512m
-        # mem_reservation: 128M
-        # cpus: 1
-        restart: always
+    # host16:
+    #     depends_on:
+    #         - reverseproxy
+    #     # image: httpd:alpine
+    #     # image: quay.io/whoacademy/virtual-learning-assistant
+    #     # command: ./bp -p
+    #     build: ./bot
+    #     cpuset: "15"
+    #     # mem_limit: 512m
+    #     # mem_reservation: 128M
+    #     # cpus: 1
+    #     restart: always
