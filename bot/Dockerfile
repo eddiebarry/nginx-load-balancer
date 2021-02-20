@@ -1,2 +1,2 @@
-FROM quay.io/whoacademy/virtual-learning-assistant
+FROM quay.io/whoacademy/botpress-team-jarvis:latest
 ENTRYPOINT ["./bp","-p"]
